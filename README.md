@@ -1,2 +1,2 @@
-# LE_6-Exercises
+# LE-6-Exercises
 Repository for the GSSI doctoral course on Monte Carlo Techniques.
