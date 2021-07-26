@@ -1,5 +1,7 @@
 import numpy as np
 import random 
+from time import process_time
+
 
 #circle x polar coordinate
 def x_circle(r1,r2):
