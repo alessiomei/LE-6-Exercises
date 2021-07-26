@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random 
 import scipy.stats as stat
+from scipy.optimize import curve_fit
 
 def p(x,norm):                           #probability density function (PDF) for the small angle Rutherford distribution
     p = (norm*(2*x))/(1+x**2)**2
