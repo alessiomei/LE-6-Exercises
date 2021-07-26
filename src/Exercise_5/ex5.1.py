@@ -55,7 +55,6 @@ for m in range(0,len(n)):
             x=random.random()
             F+=f(x,m)
         int_nm.append(F/N)    
-    I.append(int_nm)
     int_nm=np.array(int_nm)
     mean=np.mean(I_an(m)-int_nm)
     std=np.std(I_an(m)-int_nm)
