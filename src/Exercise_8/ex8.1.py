@@ -118,16 +118,17 @@ def R(theta, phi):
 
 
 #apply the rotation matrix to the old coordinates, now photon traverls along (0,1,0) (y-axis)
+#Since in this code the z-axis versor is a row vector, I have to use the transpose rotation matrix
 coordinates_2=np.zeros((3,len(phi)))
 for j in range(0, len(phi)):
-  coordinates_2[:,j]= coordinates_2[:,j]+np.array(coordinates_1[:,j]*R(np.pi/2, np.pi/2))
+  coordinates_2[:,j]= coordinates_2[:,j]+np.array(coordinates_1[:,j]*np.matrix.transpose(R(np.pi/2, np.pi/2)))
 
 #3D plot with density colormap for photon along y-axis
 fig=plt.figure()
 ax= plt.axes(projection='3d')
 xyz = np.vstack([coordinates_2[0,:], coordinates_2[1,:] , coordinates_2[2,:]])
 density = stat.gaussian_kde(xyz)(xyz)
-ax.scatter(coordinates_2[0,:], coordinates_2[1,:] ,  coordinates_2[2,:], c= coordinates_2[2,:], cmap='magma', s=10)
+ax.scatter(coordinates_2[0,:], coordinates_2[1,:] ,  coordinates_2[2,:], c= density, cmap='magma', s=10)
 ax.set_xlabel('X')
 ax.set_ylabel('Y')
 ax.set_zlabel('Z')
