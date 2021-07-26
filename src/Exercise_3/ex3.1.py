@@ -5,6 +5,11 @@ import scipy.stats as stat
 
 N_tot=[100,1000, 5000, 100000]
 
+#circunference definition, condition for random sampling: circ(x,y) <=1
+def circ(x,y):
+    c= (x)**2+(y)**2
+    return c
+
 pi_distr_N=[]
 for j in range(0,3):
     pi_distr=[]                         #list that contains 3 different pi distributions, each with N_tot[3] estimates obtained with N_tot[j] extractions
