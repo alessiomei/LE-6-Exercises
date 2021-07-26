@@ -15,7 +15,7 @@ def I_analytic(D):
     return I
 
   
-N=[65536, 256**2, 40**3, 16**4, 9**5, 6**6, 5**7, 4**8].  #number of extractions = number of cells
+N=[65536, 256**2, 40**3, 16**4, 9**5, 6**6, 5**7, 4**8]   #number of extractions = number of cells
 
 
        
