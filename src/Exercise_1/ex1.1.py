@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import scipy.stats as stat
 from numba import jit
 
 a=7**5      #moltiplier
