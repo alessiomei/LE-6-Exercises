@@ -3,5 +3,5 @@ Repository for the GSSI doctoral course exercises on Monte Carlo Techniques.
 Here you can find:
 
 - The Python codes used to solve the exercises; 
-- A .pdf file containing the exercises description;
-- A .pdf file containing the report with exercises solutions
+- The exercises list;
+- The report with exercises descriptions and solutions.
